@@ -58,24 +58,35 @@ body {
     background-image: url(../img/header-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 90vh;
+    position: relative;
 }
 
-#header h1 {
-    font-size: 100px;
+.inner {
+    font-size: 65px;
     color: #FFF;
     display: block;
     width: 100%;
     text-align: center;
     padding-top: 180px;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
+.inner span {
+    color: #1AC056;
+}
 #o-mnie {
     text-align: center;
     background-color: #F9FCFE;
     /*    margin-top: 52px;*/
     /*    margin-bottom: 52px;*/
     overflow: hidden;
+}
+
+span {
+    color: #1AC056;
 }
 
 #o-mnie h2 {
@@ -117,4 +128,25 @@ body {
 
 #clear {
     clear: both;
+}
+
+#umiejetnosci {
+    text-align: center;
+}
+
+#umiejetnosci p {
+    margin: 30px;
+}
+
+span {
+    color: #1AC056;
+}
+
+#ikony {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#ikony figure {
+    display: inline-block;
 }
