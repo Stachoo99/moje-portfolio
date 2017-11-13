@@ -6,16 +6,40 @@
         text-align: right;
         line-height: 50px;
     }
-    
+
     #main-nav ul {
         display: none;
     }
-    
+
     #main-nav #drop:checked + ul {
         display: block;
     }
-    
+
     #main-nav ul li {
         width: 100%;
+        box-sizing: border-box;
+        padding-right: 15px;
+    }
+
+
+    #o-mnie figure {
+        float: left;
+        width: 34%;
+    }
+    
+    #section {
+    width: 45%;
+    height: 80vh;
+    float: right;
+    margin-right: 73px;
+    text-align: left;
+    }
+    
+    #section {
+    width: 45%;
+    height: 80vh;
+    float: right;
+    margin-right: 73px;
+    text-align: left;
     }
 }
