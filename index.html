@@ -4,19 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
     <link href="https://fonts.googleapis.com/css?family=Lato:300&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--    font awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
     <!--   nawigacja -->
     <nav id="main-nav">
+       
+       <label for="drop" class="toggle">Menu</label>
+       <input type="checkbox" id="drop">
         <ul>
-            <li><a href="">o mnie</a></li>
-            <li><a href="">umiejętności</a></li>
-            <li><a href="">portfolio</a></li>
-            <li><a href="">kontakt</a></li>
+            <li><a href="#o-mnie">o mnie</a></li>
+            <li><a href="#umiejetnosci">umiejętności</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#adres">kontakt</a></li>
         </ul>
     </nav>
     <!--koniec nawigacja -->
@@ -25,8 +34,8 @@
 
     <div id="header">
         <div class="inner">
-        <h1>Adam <span>Stasiun</span></h1>
-        <h2>Front-End Developer</h2>
+            <h1>Adam <span>Stasiun</span></h1>
+            <h2>Front-End Developer</h2>
         </div>
     </div>
 
@@ -54,26 +63,103 @@
     <!--sekcja moje umiejetnosci -->
     <section id="umiejetnosci">
         <h2>Moje <span>Umiejętności</span></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati adipisci eum molestias dolorum impedit reprehenderit, deleniti quia asperiores modi vel alias assumenda amet dolorem et facilis eligendi tempora, dolore maiores.s
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eaque architecto cum totam dignissimos deserunt hic reiciendis, iusto, excepturi, quaerat earum sapiente placeat! Repellat impedit nulla, vero! Veniam, similique, consequatur.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati adipisci eum molestias dolorum impedit reprehenderit, deleniti quia asperiores modi vel alias assumenda amet dolorem et facilis eligendi tempora, dolore maiores.s Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eaque architecto cum totam dignissimos deserunt hic reiciendis, iusto, excepturi, quaerat earum sapiente placeat! Repellat impedit nulla, vero! Veniam, similique, consequatur.</p>
         <div id="ikony">
             <figure>
-               <img src="img/html5.png" alt="HTML5">
+                <img src="img/html5.png" alt="HTML5">
                 <figcaption>HTML5</figcaption>
             </figure>
-            
-            <figure><img src="img/css3.png" alt="Cascading Style Sheets"><figcaption>CSS</figcaption></figure>
-            
-            <figure><img src="img/js.png" alt="Java Script"><figcaption>Java Script</figcaption></figure>
-            
-            <figure><img src="img/jquery.png" alt="jQuery"><figcaption>jQuery</figcaption></figure>
-            
+
+            <figure><img src="img/css3.png" alt="Cascading Style Sheets">
+                <figcaption>CSS</figcaption>
+            </figure>
+            <figure><img src="img/js.png" alt="Java Script">
+                <figcaption>Java Script</figcaption>
+            </figure>
+            <figure><img src="img/jquery.png" alt="jQuery">
+                <figcaption>jQuery</figcaption>
+            </figure>
         </div>
     </section>
 
+    <section>
+        <div id="portfolio" class="moje-portfolio">
+            <h2>Moje <span>Portfolio</span></h2>
+            <div class="tla">
 
-figure*4>img
+                <!--
+                   maska
+                   border
+                   content
+-->
+                <div class="background1 background">
+                    <div class="maska">
+                        <div class="border">
+                            <div class="content">
+                                <h2>Lorem ipsum</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo odit laboriosam odio quasi nam quae qui porro possimus dolores, nemo id, expedita ipsam ea eos numquam exercitationem atque iusto molestias.<br />
+                                <h3>Wykorzystane technologie:</h3>HTML5, CSS3, RWD, bootstrap, JS, jQuery<br /><i class="fa fa-link" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="background2 background">
+                    <div class="maska">
+                        <div class="border">
+                            <div class="content">
+                                <h2>Lorem ipsum</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab recusandae quidem, quasi optio reiciendis, unde porro sunt ratione atque quaerat, distinctio tempore! Aliquam excepturi at quidem architecto nulla. Incidunt, expedita!<br />
+                                <h3>Wykorzystane technologie:</h3>HTML5, CSS3, RWD, bootstrap, JS, jQuery<br /><i class="fa fa-link" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="background3 background">
+                    <div class="maska">
+                        <div class="border">
+                            <div class="content">
+                                <h2>Lorem ipsum</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab recusandae quidem, quasi optio reiciendis, unde porro sunt ratione atque quaerat, distinctio tempore! Aliquam excepturi at quidem architecto nulla. Incidunt, expedita!<br />
+                                <h3>Wykorzystane technologie:</h3>HTML5, CSS3, RWD, bootstrap, JS, jQuery<br /><i class="fa fa-link" aria-hidden="true"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <footer>
+        <div class="footer">
+            <div id="adres" class="adress">
+                <h1 id="h1">Adam <span>Stasiun</span></h1>
+                <address>
+<div id="ulica">ul. Mostowa 6/13 <br>
+31-061 Krakow<br></div>
+
+
+tel. 888888888<br>
+<a href="mailto:a.stasiun@icloud.com"><span>a.stasiun@icloud.com</span></a>
+</address>
+                <div class="social">
+                    <a href="https://facebook.com" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com" class="fa fa-twitter"></a>
+                    <a href="https://google.com" class="fa fa-google"></a>
+                    <a href="https://linkedin.com" class="fa fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+    <!--    formularz -->
+    <div class="formularz">
+        <form class="inputfocus" action=m ethod="POST">
+            <label for="imie"></label><br>
+            <input id="imienazwisko" type="text" placeholder="Imię i Nazwisko" name="Imie"><br>
+            <label for="Email"></label><br>
+            <input id="email" type="email" name="Email" placeholder="Adres Email"><br>
+            <label for="Wiadomość"></label><br>
+            <textarea id="textarea" name="Wiadomość" cols="30" rows="10" placeholder="Wiadomość"></textarea><br>
+            <input id="wyslij" type="submit" value="Wyślij">
+        </form>
+    </div>
+
+    <!--    koniec formularza -->
 </body>
 
 </html>
